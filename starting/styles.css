@@ -1,0 +1,476 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+    font-family: 'Baloo 2', cursive,Arial, Helvetica, sans-serif;
+
+
+    min-width: 40%;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template: repeat(7,1fr)/repeat(1,1fr);
+    height: 100vh;
+    
+    
+
+    grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g" 
+    ;
+}
+#navbar{
+    grid-area: a;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    
+    height:13vh;
+
+    position:fixed;
+    color: white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 0 0.5 rgba(208, 238, 133, 1.8),  0 0 0 0.5 rgba(208, 238, 133, 1.8);
+    
+}
+#navbar .textLogo{
+    order:0;
+    width: 50%;
+    margin-left: 0.8em;
+}
+
+#navbar nav{
+    order: 1;
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    
+}
+
+#navbar nav ul>li{
+        text-decoration: none;
+        list-style-type: none;
+        display: inline;
+        margin: 0.5em;
+        
+        
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+
+    
+}
+li>a:hover{
+    text-decoration-style: dashed;
+    text-decoration: underline;
+    text-decoration-width: 4px;
+    text-decoration-color: aquamarine; 
+    color: white;   
+    transition: all  2s;
+    
+
+   
+}
+#headerSection{
+    grid-area: b;
+    
+    display: absolute;
+    margin-top: 55px;
+    
+    background-image: url("devClubHeader.jpg");
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    
+}
+
+#headerSection h1{
+    margin-left: 1.5em;
+    margin-top: 3rem;
+    color: black;
+    
+}
+#headerSection p{
+    margin-left: 2.8em;
+    font-size:large ;
+    color: black;
+    
+    
+}
+
+#whoWeareSection{
+    grid-area: c;
+    background-color: rgb(49, 44, 44);
+    background: linear-gradient(-180deg,grey,black);
+    text-align: center;
+    color: rgb(205, 202, 202);
+}
+
+
+#gallerySection{
+    grid-area: d;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+    width: 100%;
+    
+    background-color: white;
+    
+    
+
+}
+#galleryHeading{
+
+    
+    order: 0;
+    width: 100%;
+    font-weight: 500;
+
+}
+
+.galleryTitle1{
+    text-align: left;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+.galleryTitle2{
+    text-align: left;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+.galleryTitle3{
+    text-align: left;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+.galleryTitle4{
+    text-align: left;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+.galleryItem1{
+    order: 1;
+    width: 40%;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 6px;
+    margin-left: 0;
+   
+
+
+}
+.galleryItem2{
+    order: 2;
+    width: 40%;
+    height: 348px;
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+    border-radius: 6px;
+}
+.galleryItem3{
+    order: 3;
+    width: 40%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    border-radius: 6px;
+    padding-bottom: 4em;
+}
+.galleryItem4{
+    order: 4;
+    width: 40%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 4em;
+    border-radius: 6px;
+    padding-bottom: 4em;
+
+}
+.galleryItem2:hover,
+.galleryItem1:hover,
+.galleryItem3:hover ,
+.galleryItem4:hover{
+    filter: opacity(90%);
+    
+}
+#pics1,#pics2, #pics3, #pics4{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+#pics2{
+    height:79%;
+    width: 100%;
+    
+}
+#galleryHeading{
+    height: 17vh;
+}
+#galleryHeading h2{
+    text-align: center;
+    font-size: 3em;
+    
+}
+
+
+
+@media only screen and (max-width: 871px) and (min-width: 498px){
+
+    #gallerySection{
+        grid-area: d;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        width: 100%;
+        
+        background-color: white;
+        
+        
+    
+    }
+    #navbar .textLogo{
+        order:0;
+        width: 30%;
+    }
+    
+    #navbar nav{
+        order: 1;
+        width: 70%;
+        display: inline-flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        font-size: 0.8em;
+        margin-top: 0.7em;
+    
+        
+    }
+    #gallerySection{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #galleryHeading{
+
+    
+        order: 0;
+        width: 100%;
+    
+    }
+    
+    .galleryItem1{
+        order: 1;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    
+    }
+    .galleryItem2{
+        order: 2;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .galleryItem3{
+        order: 3;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .galleryItem4{
+        order: 4;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .galleryItem2:hover,
+    .galleryItem1:hover,
+    .galleryItem3:hover ,
+    .galleryItem4:hover{
+    
+    filter:none;
+    
+    }
+
+}
+@media only screen and (max-width: 498px){
+    #gallerySection{
+        grid-area: d;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        width: 100%;
+        
+        background-color: white;
+        
+        
+    
+    }
+    #navbar{
+        grid-area: a;
+        background-color: black;
+       
+        
+       
+        width: 100%;
+        height: auto;
+         display: block;
+        position: relative;
+    
+        
+        color: white;
+        border-bottom: 1px solid white;
+        box-shadow: 0 0 0 0.5 rgba(208, 238, 133, 1.8),  0 0 0 0.5 rgba(208, 238, 133, 1.8);
+        
+       
+    }
+    #navbar .textLogo{
+        order:0;
+        width: 50%;
+        display: block;
+        margin-left: 38%;
+    }
+    
+    #navbar nav{
+        order: 1;
+        width: 50%;
+        display: block;
+       margin-left: 23%;
+       text-align: center;
+
+       
+    
+        
+    }
+    
+    
+    #navbar nav ul>li{
+            text-decoration: none;
+            list-style-type: none;
+            display: block;
+            margin: 0.5em;
+            
+            
+    }
+    #headerSection{
+        margin-top: 0;
+
+    }
+    #headerSection p,#headerSection h2{
+
+        text-align: left ;
+    }
+    #gallerySection{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #galleryHeading{
+
+    
+        order: 0;
+        width: 100%;
+    
+    }
+    
+    .galleryItem1{
+        order: 1;
+        width: 90%;
+        height: auto;
+        margin-bottom: 0;
+        
+    
+    }
+    .galleryItem2{
+        order: 2;
+        width: 90%;
+        height: auto;
+        padding-bottom: 0;
+        
+        
+        
+    }
+    .galleryItem3{
+        order: 3;
+        width: 90%;
+        height: auto;
+        
+        
+    }
+    .galleryItem4{
+        order: 4;
+        width: 90%;
+        height: auto;
+        
+    }
+    
+
+}
+#upcomingEvents{
+    grid-area: e;
+    background-color: black;
+    visibility: hidden;
+    display: none;
+}
+#contactUs{
+    grid-area: f;
+    background-color: white;
+    text-align: center;
+    color: black;
+
+}
+#contactUs > h5 > a{
+    color: black;
+    text-decoration: none;
+}
+#footerSection{
+    grid-area:g;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
