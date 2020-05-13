@@ -99,7 +99,7 @@ li>a:hover{
     background-position: center;
     /*background-attachment:fixed;*/
     
-    /*background-size: cover;*/
+    background-size: cover;
     /*image-rendering: pixelated;*/
     
 
@@ -254,6 +254,7 @@ li>a:hover{
 
     #headerSection{
         background-size: 100%;
+        height: auto;
     }
     #gallerySection{
         grid-area: d;
@@ -343,7 +344,10 @@ li>a:hover{
 
 }
 @media only screen and (max-width: 498px){
-    
+    #headerSection{
+        background-size: 100%;
+        height: auto;
+    }
     #gallerySection{
         grid-area: d;
         display:flex;
