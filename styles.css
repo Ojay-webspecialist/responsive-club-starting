@@ -252,6 +252,9 @@ li>a:hover{
 
 @media only screen and (max-width: 871px) and (min-width: 498px){
 
+    #headerSection{
+        background-size: contain;
+    }
     #gallerySection{
         grid-area: d;
         display:flex;
@@ -340,6 +343,9 @@ li>a:hover{
 
 }
 @media only screen and (max-width: 498px){
+    #headerSection{
+        background-size: contain;
+    }
     #gallerySection{
         grid-area: d;
         display:flex;
