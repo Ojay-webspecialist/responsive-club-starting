@@ -92,14 +92,15 @@ li>a:hover{
     display: absolute;
     margin-top: 55px;
     
-    background-image: url("devClubHeader.jpg");
+    background-image: url("gallery3.jpg");
     
     height: 70vh;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-attachment:fixed;*/
+    background-attachment:fixed;
     
     background-size: cover;
+
     /*image-rendering: pixelated;*/
     
 
@@ -111,13 +112,13 @@ li>a:hover{
 #headerSection h1{
     margin-left: 1.5em;
     margin-top: 3rem;
-    color: black;
+    color: white;
     
 }
 #headerSection p{
     margin-left: 2.8em;
     font-size:large ;
-    color: black;
+    color: white;
 }
 
 #whoWeareSection{
@@ -349,7 +350,8 @@ li>a:hover{
         background-image: url("gallery3.jpg");
         background-size: cover;
         height: auto;
-        text-align: left;
+        background-attachment: scroll;
+        
         
        
     }
@@ -365,6 +367,7 @@ li>a:hover{
         color:white;
         font-weight: bold;
         font-size: 1.5em;
+        text-align: center;
         
         
     }
