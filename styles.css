@@ -253,9 +253,10 @@ li>a:hover{
 @media only screen and (max-width: 871px) and (min-width: 498px){
 
     #headerSection{
-        background-size: cover;
+        
         height: auto;
     }
+   
     #gallerySection{
         grid-area: d;
         display:flex;
@@ -345,9 +346,29 @@ li>a:hover{
 }
 @media only screen and (max-width: 498px){
     #headerSection{
+        background: url("gallery3.jpg");
         background-size: cover;
         height: auto;
+        
+       
     }
+    #headerSection>p{
+        color:white;
+        font-weight: bold;
+     
+       
+       
+        
+        
+    }
+    #headerSection>h1{
+        color:white;
+        font-weight: bold;
+        
+        
+        
+    }
+    
     #gallerySection{
         grid-area: d;
         display:flex;
