@@ -7,7 +7,7 @@ body{
     font-family: 'Baloo 2', cursive,Arial, Helvetica, sans-serif;
 
 
-    min-width: 40%;
+    
 }
 
 #gridContainer{
@@ -78,7 +78,7 @@ li>a{
 li>a:hover{
     text-decoration-style: dashed;
     text-decoration: underline;
-    text-decoration-width: 4px;
+   
     text-decoration-color: aquamarine; 
     color: white;   
     transition: all  2s;
@@ -94,11 +94,14 @@ li>a:hover{
     
     background-image: url("devClubHeader.jpg");
     
-    
+    height: 70vh;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment:fixed;
+    
     background-size: cover;
-    height: 70vh;
+    image-rendering: pixelated;
+    
     
 }
 
@@ -112,8 +115,6 @@ li>a:hover{
     margin-left: 2.8em;
     font-size:large ;
     color: black;
-    
-    
 }
 
 #whoWeareSection{
